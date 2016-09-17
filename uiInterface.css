@@ -1,0 +1,162 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,900';
+body,
+svg text,
+svg tspan {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+svg {
+    width: 100%;
+}
+
+main {
+    min-width: 900px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.units p {
+    margin: 0;
+    margin-top: 5px;
+}
+
+.unit {
+    padding: 10px;
+    margin-top: 15px;
+    /*border: 10px solid transparent;
+border-image: linear-gradient(to right, green, red) 1 1;
+border-image: linear-gradient(to right, rgba(0, 0, 0, 1) 3%, rgba(0, 0, 0, 0) 3%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 1) 97%) 1;*/
+}
+
+
+/*
+.unit:nth-of-type(odd) {
+    background-color: #f1f1f1;
+}
+*/
+
+.keySection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.requiredContainer {
+    flex-grow: 7;
+}
+
+.optionalContainer {
+    flex-grow: 3;
+    margin-left: 15px;
+}
+
+.bar {
+    border: 3px solid black;
+    height: 30px;
+}
+
+.unitBar {
+    height: 60px;
+    display: flex;
+}
+
+.unitGrade {
+    display: inline;
+    position: relative;
+    /*position: relative;
+top: -25px;
+left: -10px;*/
+}
+
+.innerBar {
+    margin: 3px 0;
+    height: calc(100% - 3px * 2);
+}
+
+.innerBar:first-child {
+    margin-left: 3px;
+}
+
+.requiredContainer .innerBar,
+.unitContainer .innerBar:first-child {
+    background-color: rgb(35, 147, 131);
+}
+
+.optionalContainer .innerBar,
+.unitContainer .innerBar:nth-child(2) {
+    background-color: rgb(171, 62, 32);
+}
+
+img {
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+/************ SVG CSS ***************/
+
+.white {
+    fill: #FFF;
+}
+
+.whiteOutline {
+    stroke: #FFF;
+}
+
+.redDark {
+    fill: #F26454;
+}
+
+.redOutline {
+    stroke: #F26454;
+}
+
+.redLight {
+    fill: #F58E80;
+}
+
+.blueVeryDark {
+    fill: #3F6787;
+}
+
+.blueDark {
+    fill: #2D84C3;
+}
+
+.blueOutline {
+    stroke: #2D84C3;
+}
+
+.blueLight {
+    fill: #3CABE1;
+}
+
+.yellowDark {
+    fill: #F6BF59;
+}
+
+.yellowOutline {
+    stroke: #F6BF59;
+}
+
+.yellowLight {
+    fill: #F7E58F;
+}
+
+.yellowDark2 {
+    fill: #F8C15B;
+}
+
+.outline {
+    stroke-width: 4;
+    fill: none;
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="938px"
+	 height="300px" viewBox="0 0 938 300" enable-background="new 0 0 938 300" xml:space="preserve">
+<g id="Layer_2">
+	
+		<image overflow="visible" width="900" height="300" xlink:href="Nebula Background.jpg"  transform="matrix(1.0438 0 0 1.0438 -0.708 -6.5703)">
+	</image>
+</g>
+<g id="Layer_3">
+	<radialGradient id="SVGID_1_" cx="469" cy="150" r="348.1817" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#003958;stop-opacity:0.44"/>
+		<stop  offset="1" style="stop-color:#001423;stop-opacity:0.76"/>
+	</radialGradient>
+	<rect fill="url(#SVGID_1_)" width="938" height="300"/>
+</g>
+<g id="Layer_1">
+	<rect x="37.48" y="26.55" fill="#FFFFFF" width="246.9" height="246.9"/>
+	<g>
+		<path fill="#F26454" d="M398.72,202.52v57.93h-57.93v-57.93H398.72 M402.72,198.52h-4h-57.93h-4v4v57.93v4h4h57.93h4v-4v-57.93
+			V198.52L402.72,198.52z"/>
+	</g>
+	<g>
+		<path fill="#F26454" d="M590.62,202.48v17.28H422.34v-17.28H590.62 M594.62,198.48h-4H422.34h-4v4v17.28v4h4h168.28h4v-4v-17.28
+			V198.48L594.62,198.48z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 418.165 72.9194)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="37">RANK</text>
+	<text transform="matrix(1 0 0 1 531.832 73)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="37">CAPTAIN</text>
+	<rect x="427.33" y="205.95" fill="#F58E80" width="112" height="10.33"/>
+	<path fill="#F26454" d="M369.76,217.74v-0.46c-6.94-18.17-31.36-10.74-24.38,8.26c6.98,18.99,24.38,30.1,24.38,30.1v0.46
+		c0,0,17.4-11.11,24.38-30.1C401.12,207.01,376.7,199.58,369.76,217.74z"/>
+	<g>
+		<path fill="#2D84C3" d="M688.62,202.52v57.93h-57.93v-57.93H688.62 M692.62,198.52h-4h-57.93h-4v4v57.93v4h4h57.93h4v-4v-57.93
+			V198.52L692.62,198.52z"/>
+	</g>
+	<g>
+		<path fill="#2D84C3" d="M880.52,202.48v17.28H712.24v-17.28H880.52 M884.52,198.48h-4H712.24h-4v4v17.28v4h4h168.28h4v-4v-17.28
+			V198.48L884.52,198.48z"/>
+	</g>
+	<rect x="717.23" y="205.95" fill="#3CABE1" width="112" height="10.33"/>
+	<g>
+		<path fill="#F6BF59" d="M398.72,121.28v57.93h-57.93v-57.93H398.72 M402.72,117.28h-4h-57.93h-4v4v57.93v4h4h57.93h4v-4v-57.93
+			V117.28L402.72,117.28z"/>
+	</g>
+	<g>
+		<g>
+			<path fill="#F6BF59" d="M881,121.25v17.28H422.34v-17.28H881 M885,117.25h-4H422.34h-4v4v17.28v4h4H881h4v-4v-17.28V117.25
+				L885,117.25z"/>
+		</g>
+	</g>
+	<rect x="427.33" y="124.72" fill="#F7E58F" width="112" height="10.33"/>
+	<circle fill="#F58E80" cx="383.9" cy="218.38" r="6.9"/>
+	<text transform="matrix(1 0 0 1.13 419 263.5)"><tspan x="0" y="0" fill="#F58E80" font-family="'Roboto-Regular'" font-size="21">68</tspan><tspan x="23.65" y="0" fill="#F26454" font-family="'Roboto-Regular'" font-size="21">/100</tspan></text>
+	<text transform="matrix(1 0 0 1.13 419 182.2666)"><tspan x="0" y="0" fill="#F7E58F" font-family="'Roboto-Regular'" font-size="21">21</tspan><tspan x="23.65" y="0" fill="#F8C15B" font-family="'Roboto-Regular'" font-size="21">/100</tspan></text>
+	<text transform="matrix(1 0 0 1.13 709.0342 263.418)"><tspan x="0" y="0" fill="#3CABE1" font-family="'Roboto-Regular'" font-size="21">45</tspan><tspan x="23.65" y="0" fill="#2D84C3" font-family="'Roboto-Regular'" font-size="21">/100</tspan></text>
+	<g>
+		<polygon fill="#F8C15B" points="369.76,174.78 369.76,174.78 369.76,174.78 		"/>
+		<polygon fill="#F8C15B" points="369.76,125.72 369.76,125.72 369.76,125.73 		"/>
+		<path fill="#F8C15B" d="M344.69,138.11c0,0,1.82,24.94,25.06,36.67v-49.05C369.75,125.73,357.38,133.21,344.69,138.11z"/>
+		<path fill="#F7E58F" d="M394.82,138.11c-12.69-4.89-25.05-12.38-25.06-12.38v0h0v0v49.05l0,0h0l0,0
+			C393,163.05,394.82,138.11,394.82,138.11z"/>
+	</g>
+	
+		<text transform="matrix(1.37 0 0 1.13 419 241.0996)" fill="#F58E80" font-family="'Roboto-Regular'" font-size="15" letter-spacing="-0.73">HEALTH</text>
+	
+		<text transform="matrix(1.37 0 0 1.13 419 159.8662)" fill="#F7E58F" font-family="'Roboto-Regular'" font-size="15" letter-spacing="-0.73">LEVEL</text>
+	
+		<text transform="matrix(1.37 0 0 1.13 709.0342 241.0176)" fill="#3CABE1" font-family="'Roboto-Regular'" font-size="15" letter-spacing="-0.73">EXPERIENCE</text>
+	<g>
+		<polygon fill="#3CABE1" points="684.41,206.73 662.83,206.64 655.19,214.28 646.59,222.88 642.38,227.09 664.05,248.75 
+			668.26,244.55 676.86,235.95 684.5,228.31 		"/>
+		<polygon fill="#2D84C3" points="684.41,206.73 673.66,217.48 666.02,225.12 656.83,234.31 653.22,237.92 664.05,248.75 
+			667.66,245.14 676.86,235.95 684.5,228.31 		"/>
+		
+			<rect x="632.41" y="231.81" transform="matrix(0.7071 0.7071 -0.7071 0.7071 358.7018 -394.2523)" fill="#3F6787" width="45.71" height="8.14"/>
+		
+			<rect x="644.24" y="231.69" transform="matrix(0.707 0.7072 -0.7072 0.707 360.7841 -389.5485)" fill="#3F6787" width="12.54" height="17.87"/>
+		<rect x="634.81" y="241.51" fill="#3F6787" width="14.81" height="14.81"/>
+	</g>
+	<rect x="20.5" y="12" fill="none" stroke="#73BDE9" stroke-width="2.9769" stroke-miterlimit="10" width="897" height="276"/>
+	<text transform="matrix(1 0 0 1 419.665 87.1694)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="14">POLSC - 150</text>
+	<g>
+		<path fill="#FFFFFF" d="M398.72,37.55v57.93h-57.93V37.55H398.72 M402.72,33.55h-4h-57.93h-4v4v57.93v4h4h57.93h4v-4V37.55V33.55
+			L402.72,33.55z"/>
+	</g>
+	<polygon fill="#FFFFFF" points="369.76,42.84 377.45,58.43 394.65,60.93 382.21,73.06 385.14,90.19 369.76,82.1 354.37,90.19 
+		357.31,73.06 344.87,60.93 362.07,58.43 	"/>
+	
+		<image overflow="visible" width="201" height="201" xlink:href="../../../SharePoint/Campus Curriculum Development - Act/Courses/POLSC 150/Ranking Icons/26.png"  transform="matrix(1.2316 0 0 1.2316 37.4668 25.2188)">
+	</image>
+	<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="526" y1="34.55" x2="526" y2="84.17"/>
+</g>
+</svg>

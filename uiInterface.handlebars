@@ -1,0 +1,95 @@
+<h1>{{studentName}}</h1>
+<svg xmlns="http://www.w3.org/2000/svg" width="938" height="300" viewBox="0 0 938 300">
+    <g id="bg">
+        <image width="938" height="300" xlink:href="Nebula Background.jpg" transform="matrix(1.045 0 0 1 -22 0)" />
+
+        <radialGradient id="radialGradientBG" cx="469" cy="150" r="348.2" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#003958" stop-opacity="0.4" />
+            <stop offset="1" stop-color="#001423" stop-opacity="0.7" />
+        </radialGradient>
+        <rect width="938" height="300" fill="url(#radialGradientBG)" />
+        <!-- outline -->
+        <rect x="20.5" y="12" width="897" height="276" style="fill:none;stroke-width:3;stroke:#73BDE9" />
+    </g>
+    <g id="rankPic">
+        <rect x="37.5" y="26.6" width="246.9" height="246.9" class="white" />
+        <image width="201" height="201" xlink:href="{{rank.file}}" transform="matrix(1.2316 0 0 1.2316 37.4668 25.2188)" />
+    </g>
+    <g id="rankTitle">
+        <!-- text -->
+        <text transform="matrix(1 0 0 1 418.165 72.9194)" font-size="37" class="white bold">RANK</text>
+        <line x1="526" y1="34.6" x2="526" y2="84.2" style="fill:none;stroke-width:3;stroke:#FFF" />
+        <text transform="matrix(1 0 0 1 531.832 73)" font-size="37" class="white light">{{rank.name}}</text>
+        <text transform="matrix(1 0 0 1 419.665 87.1694)" font-size="14" class="white bold">POLSC - 150</text>
+        
+        <!-- outlines -->
+        <rect x="339" y="35.5" width="62" height="62" class="outline whiteOutline" />
+        
+        <!-- icon -->
+        <polygon points="369.8 42.8 377.5 58.4 394.7 60.9 382.2 73.1 385.1 90.2 369.8 82.1 354.4 90.2 357.3 73.1 344.9 60.9 362.1 58.4 " class="white" />
+    </g>
+    <g id="experience" transform="translate(-290 -81)">
+        <!-- text -->
+        <text transform="matrix(1.37 0 0 1.13 709.0342 241.0176)" font-size="15" letter-spacing="-0.73" class="blueLight">EXPERIENCE</text>
+        <text transform="matrix(1 0 0 1.13 709.0342 263.418)">
+            <tspan font-size="21" class="blueLight bold">{{points.earned}}</tspan>
+            <tspan font-size="21" class="blueDark light">&#x2F;{{points.possible}}</tspan>
+        </text>
+        
+        <!-- outlines -->
+        <path d="M688.6 202.5v57.9h-57.9v-57.9H688.6M692.6 198.5h-4 -57.9 -4v4 57.9 4h4 57.9 4v-4 -57.9V198.5L692.6 198.5z" class="blueDark" />
+        <rect x="710" y="200" width="463" height="22" class="outline blueOutline" />
+        
+        <!-- fill -->
+        <rect x="717.2" y="206" width="{{experience.width}}" height="10.3" class="blueLight" />
+        
+        <!-- icon -->
+        <polygon points="684.4 206.7 662.8 206.6 655.2 214.3 646.6 222.9 642.4 227.1 664.1 248.8 668.3 244.6 676.9 236 684.5 228.3 " class="blueLight" />
+        <polygon points="684.4 206.7 673.7 217.5 666 225.1 656.8 234.3 653.2 237.9 664.1 248.8 667.7 245.1 676.9 236 684.5 228.3 " class="blueDark" />
+        <rect x="632.4" y="231.8" transform="matrix(0.7071 0.7071 -0.7071 0.7071 358.7018 -394.2523)" width="45.7" height="8.1" class="blueVeryDark" />
+        <rect x="644.2" y="231.7" transform="matrix(0.707 0.7072 -0.7072 0.707 360.7841 -389.5485)" width="12.5" height="17.9" class="blueVeryDark" />
+        <rect x="634.8" y="241.5" width="14.8" height="14.8" class="blueVeryDark" />
+
+    </g>
+    <g id="health">
+        <!-- text -->
+        <text transform="matrix(1.37 0 0 1.13 419 241.0996)" font-size="15" letter-spacing="-0.73" class="redLight">HEALTH</text>
+        <text transform="matrix(1 0 0 1.13 419 263.5)">
+            <tspan font-size="21" class="redLight bold">{{health.pointsTop}}</tspan>
+            <tspan font-size="21" class="redDark light">&#x2F;{{health.pointsBot}}</tspan>
+        </text>
+        
+        <!-- outlines -->
+        <rect x="339" y="200" width="62" height="62" class="outline redOutline" />
+        <rect x="420" y="200" width="173" height="22" class="outline redOutline" />
+        
+        <!-- fill -->
+        <rect x="427.3" y="206" width="{{health.width}}" height="10.3" class="redLight" />
+        
+        <!-- icon -->
+        <path d="M369.8 217.7v-0.5c-6.9-18.2-31.4-10.7-24.4 8.3 7 19 24.4 30.1 24.4 30.1v0.5c0 0 17.4-11.1 24.4-30.1C401.1 207 376.7 199.6 369.8 217.7z" class="redDark" />
+        <circle cx="383.9" cy="218.4" r="6.9" class="redLight" />
+
+    </g>
+    <g id="level" transform="translate(290 81)">
+        <!-- text -->
+        <text transform="matrix(1.37 0 0 1.13 419 159.8662)" font-size="15" letter-spacing="-0.73" class="yellowLight">RANK POINTS</text>
+        <text transform="matrix(1 0 0 1.13 419 182.2666)">
+            <tspan font-size="21" class="yellowLight bold">{{rank.pointsTop}}</tspan>
+            <tspan font-size="21" class="yellowDark2 light">&#x2F;{{rank.pointsBot}}</tspan>
+        </text>
+        
+        <!-- outlines -->
+        <rect x="339" y="119" width="62" height="62" class="outline yellowOutline" />
+        <rect x="420" y="119" width="173" height="22" class="outline yellowOutline" />
+        
+        <!-- fill -->
+        <rect x="427.3" y="124.7" width="{{rank.width}}" height="10.3" class="yellowLight" />
+        
+        <!-- icon -->
+        <path d="M344.7 138.1c0 0 1.8 24.9 25.1 36.7v-49C369.8 125.7 357.4 133.2 344.7 138.1z" class="yellowDark2" />
+        <path transform="translate(-0.15 0)" d="M394.8 138.1c-12.7-4.9-25-12.4-25.1-12.4v0h0v0 49.1l0 0h0l0 0C393 163.1 394.8 138.1 394.8 138.1z" class="yellowLight" />
+    </g>
+    <circle cx="938" cy="300" r="3" style="fill:none; stroke:red; "/>
+</svg>
+<img src="testUI.jpg" style="width:100%">

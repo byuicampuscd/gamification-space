@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400">
+    <g id="bg">
+        <rect width="900" height="400" class="bgDark" />
+    </g>
+    <g id="everythingElse">
+        <path d="M859 27.2v21.3 303 21.3h-5.6H46.7 41v-21.3 -303V27.2h5.6 806.6H859M862.4 23.8H859h-5.6H46.7 41h-3.4v3.4 21.3 303 21.3 3.4H41h5.6 806.6 5.6 3.4v-3.4 -21.3 -303V27.2 23.8L862.4 23.8z" fill="#4C4C4D" />
+        <line x1="28.8" y1="23.6" x2="28.8" y2="376.6" class="bgLight" />
+        <line x1="871.2" y1="23.6" x2="871.2" y2="376.6" class="bgLight" />
+        <rect x="90.4" y="276.7" width="143.1" height="48.3" class="green" />
+        <rect x="90.4" y="157.5" width="486.4" height="48.3" class="bgDark" />
+        <rect x="90.4" y="157.5" width="212.5" height="48.3" class="green" />
+        <rect x="302.9" y="157.5" width="122.3" height="48.3" class="blue" />
+        <rect x="415.1" y="276.7" width="89.9" height="48.3" class="blue" />
+        <path d="M574.3 160v43.2H93V160H574.3M580.2 154.1h-3.4H90.4 87v3.4 48.3 3.4h3.4 486.4 3.4v-3.4 -48.3V154.1L580.2 154.1z" class="bgDark" />
+        <path d="M387.8 279.2v43.2H93v-43.2H387.8M393.7 273.3h-4.4 -298H87v3.4 48.3 3.4h4.4 298 4.4v-3.4 -48.3V273.3L393.7 273.3z" class="bgDark" />
+        <path d="M574.3 279.2v43.2H417.8v-43.2H574.3M580.2 273.3h-2.4H414.2h-2.4v3.4 48.3 3.4h2.4 163.6 2.4v-3.4 -48.3V273.3L580.2 273.3z" class="bgDark" />
+        <text transform="matrix(0.83 0 0 1 92.2095 354.7305)" font-size="23.8012" class="green">
+            MANDATORY
+        </text>
+        <text transform="matrix(0.83 0 0 1 417.2085 354.7305)" font-size="23.8012" class="lightBlue">
+            ELECTIVE
+        </text>
+        <path d="M580.2 154.1v3.4 48.3 3.4h-3.4H90.4 87v-3.4 -48.3 -3.4h3.4 486.4H580.2M583.6 150.7h-3.4 -3.4H90.4 87h-3.4v3.4 3.4 48.3 3.4 3.4H87h3.4 486.4 3.4 3.4v-3.4 -3.4 -48.3 -3.4V150.7L583.6 150.7z" class="white" />
+        <path d="M393.7 273.3v3.4 48.3 3.4h-4.4 -298H87v-3.4 -48.3 -3.4h4.4 298H393.7M397.1 269.9h-3.4 -4.4 -298H87h-3.4v3.4 3.4 48.3 3.4 3.4H87h4.4 298 4.4 3.4v-3.4 -3.4 -48.3 -3.4V269.9L397.1 269.9z" class="white" />
+        <path d="M580.2 273.3v3.4 48.3 3.4h-2.4H414.2h-2.4v-3.4 -48.3 -3.4h2.4 163.6H580.2M583.6 269.9h-3.4 -2.4H414.2h-2.4 -3.4v3.4 3.4 48.3 3.4 3.4h3.4 2.4 163.6 2.4 3.4v-3.4 -3.4 -48.3 -3.4V269.9L583.6 269.9z" class="white" />
+        <text transform="matrix(0.83 0 0 1 92.2095 124.043)" font-size="30.6015" class="white">
+            UNIT PROGRESS
+        </text>
+        <text transform="matrix(0.83 0 0 0.9 93.1226 80.7705)" font-size="15" class="white">
+            PROPAGANDA IN AMERICA
+        </text>
+        <path d="M821 154.1v10.8 152.7 10.8h-1.4H624.4 623v-10.8V164.8v-10.8h1.4 195.3H821M824.4 150.7H821h-1.4H624.4 623h-3.4v3.4 10.8 152.7 10.8 3.4h3.4 1.4 195.3 1.4 3.4v-3.4 -10.8V164.8v-10.8V150.7L824.4 150.7z" class="white" />
+        <text transform="matrix(0.83 0 0 1 624.7793 144.043)" font-size="30.6015" class="white">
+            UNIT GRADE
+        </text>
+        <text transform="matrix(0.83 0 0 1 93.1226 65.3384)" font-size="31" class="white">
+            UNIT 5
+        </text>
+        <text transform="matrix(0.83 0 0 1 295.9746 319.7305)" font-size="18" class="white">
+            70% WEIGHT
+        </text>
+        <text transform="matrix(0.83 0 0 1 483.9746 319.7305)" font-size="18" class="white">
+            30% WEIGHT
+        </text>
+    </g>
+    <g id="unitStatus">
+        <text transform="matrix(0.83 0 0 1 725.3721 354.7305)" font-size="23.8012" class="white">
+            PASSING
+        </text>
+    </g>
+    <g id="unitGrade">
+        <text transform="matrix(0.96 0 0 1 667.6533 301.8086)" font-size="170" letter-spacing="-4.2" class="white">
+            C
+        </text>
+    </g>
+    <g id="elective">
+        <text transform="matrix(0.83 0 0 1 473.0111 264.25)" font-size="20" class="lightBlue">
+            170&#x2F;300
+        </text>
+        <polygon points="493.4 266.3 518.8 266.3 506.1 274.5 " class="lightBlue" />
+        <path d="M515.4 267.3l-9.3 6 -9.3-6h9.3H515.4M522.2 265.3h-6.8 -9.3 -9.3H490l5.7 3.7 9.3 6 1.1 0.7 1.1-0.7 9.3-6L522.2 265.3 522.2 265.3z" class="bgDark" />
+    </g>
+    <g id="unitPercent">
+        <text transform="matrix(0.83 0 0 1 466.9448 200.1787)" font-size="47" class="white">
+            72.6%
+        </text>
+    </g>
+    <g id="mandatory">
+        <text transform="matrix(0.83 0 0 1 201.5438 264.25)" font-size="20" class="green">
+            229&#x2F;500
+        </text>
+        <polygon points="220.4 266.3 245.8 266.3 233.1 274.5 " class="green" />
+        <path d="M242.4 267.3l-9.3 6 -9.3-6h9.3H242.4M249.2 265.3h-6.8 -9.3 -9.3H217l5.7 3.7 9.3 6 1.1 0.7 1.1-0.7 9.3-6L249.2 265.3 249.2 265.3z" class="bgDark" />
+    </g>
+    <g id="unitMandatory">
+        <text transform="matrix(0.83 0 0 1 280.3597 144.043)" font-size="20" class="green">
+            32&#x2F;70
+        </text>
+        <polygon points="289.9 146.1 315.3 146.1 302.6 154.3 " class="green" />
+        <path d="M311.9 147.1l-9.3 6 -9.3-6h9.3H311.9M318.7 145.1h-6.8 -9.3 -9.3 -6.8l5.7 3.7 9.3 6 1.1 0.7 1.1-0.7 9.3-6L318.7 145.1 318.7 145.1z" class="bgDark" />
+    </g>
+    <g id="unitElective">
+        <text transform="matrix(0.83 0 0 1 402.7227 233.2422)" font-size="20" class="lightBlue">
+            17&#x2F;30
+        </text>
+        <polygon points="412.5 216.5 425.2 208.3 437.9 216.5 " class="lightBlue" />
+        <path d="M425.2 209.5l9.3 6h-9.3 -9.3L425.2 209.5M425.2 207.1l-1.1 0.7 -9.3 6 -5.7 3.7h6.8 9.3 9.3 6.8l-5.7-3.7 -9.3-6L425.2 207.1 425.2 207.1z" class="bgDark" />
+    </g>
+</svg>

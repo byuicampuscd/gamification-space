@@ -1,0 +1,13 @@
+{
+    "name": "barker-ui",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "make": "handlebars uiInterface.handlebars -f handlebarsTemplate.js",
+        "nodemon": "nodemon -x \"handlebars uiInterface.handlebars -f handlebarsTemplate.js\" -i handlebarsTemplate.js -e js,html,handlebars,css"
+    },
+    "author": "Joshua McKinney",
+    "license": "MIT"
+}
