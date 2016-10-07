@@ -1,3 +1,5 @@
+/*jslint plusplus: true, browser: true, devel: true */
+
 /* beautify preserve:start */
 var constant = {
     BARS_LEFT: 427,
