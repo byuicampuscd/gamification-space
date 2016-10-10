@@ -105,6 +105,5 @@
     });
   } else {
     runNoValence();
-  }      
-
+  }
 }());
