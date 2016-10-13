@@ -79,18 +79,44 @@
 
   if (useValence) {
     valence.run(function (err, data) {
+      var i,
+          grades,
+          finalGrade;
+
       if (err === null) {
         console.log("No error");
+
+        grades = data.getGrades();
+        finalGrade = data.getFinalCalculatedGrade();
 
         /** make gradePer **/
         var context = {
           points: {
-            earned: 101,
-            possible: 100,
-            gradePer: 0.92
+            earned: 0,
+            possible: 0,
+            gradePer: 0
           }
         };
 
+        for (i = 0; i < grades.length; ++i) {
+          if (grades[i].weightedDenominator !== null) {
+            context.points.possible += grades[i].weightedDenominator;
+            context.points.earned += grades[i].weightedNumerator;
+          } else if (grades[i].pointsDenominator !== null) {
+            context.points.possible += grades[i].pointsDenominator;
+            context.points.earned += grades[i].pointsNumerator;
+          }
+        }
+
+        if (finalGrade.weightedDenominator !== null) {
+          context.points.gradePer = finalGrade.weightedNumerator / 1000;
+        } else if (finalGrade.pointsDenominator !== null) {
+          context.points.gradePer = finalGrade.pointsNumerator / 1000;
+        }
+
+        if (context.points.gradePer > 1.0) {
+          context.points.gradePer = 1.0;
+        }
         //call them all
         addRank(context);
         addHealth(context);
