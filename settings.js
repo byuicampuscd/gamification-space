@@ -20,24 +20,24 @@ var constant = {
         {name: "3rd Class Knight",        file: "RankingIcons/10.png"}, // Hexagon
         {name: "2nd Class Knight",        file: "RankingIcons/11.png"}, // Hexagon
         {name: "1st Class Knight",        file: "RankingIcons/12.png"}, // Hexagonn
-        {name: "Knight Commander",        file: "RankingIcons/13.png"}, // Chief
-        {name: "Senior Knight Commander", file: "RankingIcons/14.png"}, // Senior Chief
-        {name: "Master Knight Commander", file: "RankingIcons/15.png"}, // Master Chief
-        {name: "3rd Field Officer",       file: "RankingIcons/16.png"}, // Ensign
-        {name: "2nd Field Officer",       file: "RankingIcons/17.png"}, // Ensign
-        {name: "1st Field Officer",       file: "RankingIcons/18.png"}, // Ensign
-        {name: "2nd Class Junior Lt.",    file: "RankingIcons/19.png"},
-        {name: "1st Class Junior Lt.",    file: "RankingIcons/20.png"},
+        {name: "Chief",                   file: "RankingIcons/13.png"}, // Chief
+        {name: "Senior Chief",            file: "RankingIcons/14.png"}, // Senior Chief
+        {name: "Master Chief",            file: "RankingIcons/15.png"}, // Master Chief
+        {name: "3rd Ensign",              file: "RankingIcons/16.png"}, // Ensign
+        {name: "2nd Ensign",              file: "RankingIcons/17.png"}, // Ensign
+        {name: "1st Ensign",              file: "RankingIcons/18.png"}, // Ensign
+        {name: "2nd Class Lt. Jr. Grade", file: "RankingIcons/19.png"},
+        {name: "1st Class Lt. Jr. Grade", file: "RankingIcons/20.png"},
         {name: "3rd Class Lt.",           file: "RankingIcons/21.png"},
         {name: "2nd Class Lt.",           file: "RankingIcons/22.png"},
         {name: "1st Class Lt.",           file: "RankingIcons/23.png"},
         {name: "Lt. Commander",           file: "RankingIcons/24.png"},
-        {name: "Senior Lt. Commander",    file: "RankingIcons/25.png"},
+        {name: "Commander",               file: "RankingIcons/25.png"},
         {name: "Captain",                 file: "RankingIcons/26.png"},
         {name: "Rear Admiral",            file: "RankingIcons/27.png"},
         {name: "Vice Admiral",            file: "RankingIcons/28.png"},
         {name: "Admiral",                 file: "RankingIcons/29.png"},
-        {name: "Counselor to President",  file: "RankingIcons/30.png"},
+        {name: "Delegate",                file: "RankingIcons/30.png"},
         {name: "President",               file: "RankingIcons/31.png"}
     ]
 };
