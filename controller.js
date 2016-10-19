@@ -38,7 +38,7 @@
       rankIndex = constant.RANKS.length - 1;
     }
 
-    pointsTop = context.points.earned - (rankIndex * pointsPerRank);
+    pointsTop = Math.floor(context.points.earned - (rankIndex * pointsPerRank));
 
     if (pointsTop > pointsPerRank) {
       pointsTop = pointsPerRank;
@@ -123,10 +123,10 @@
         addExp(context);
         console.log("context:", context);
         
-        document.querySelector('main').innerHTML = Handlebars.templates.uiInterface(context);
+        document.querySelector('#gamificationMain').innerHTML = Handlebars.templates.uiInterface(context);
       } else {
         console.log("ERROR");
-        document.querySelector('main').innerHTML = "<h1>Error in loading the widget. Please let your professor know!</h1>";
+        document.querySelector('#gamificationMain').innerHTML = "<h1>Error in loading the widget. Please let your professor know!</h1>";
       }
     });
   } else {

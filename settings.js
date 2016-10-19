@@ -8,6 +8,7 @@ var constant = {
     RANK_POINTS_LEFT: 717,
     MISSING_WIDTH: 0,
     RANKS: [
+      // Cadet
         {name: "Citizen",                 file: "RankingIcons/1.png"},
         {name: "Recruit",                 file: "RankingIcons/2.png"},
         {name: "4th Class Rookie",        file: "RankingIcons/3.png"}, // 4th Class
