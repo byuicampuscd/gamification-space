@@ -8,25 +8,24 @@ var constant = {
     RANK_POINTS_LEFT: 717,
     MISSING_WIDTH: 0,
     RANKS: [
-      // Cadet
         {name: "Citizen",                 file: "RankingIcons/1.png"},
         {name: "Recruit",                 file: "RankingIcons/2.png"},
-        {name: "4th Class Rookie",        file: "RankingIcons/3.png"}, // 4th Class
-        {name: "2nd Class Rookie",        file: "RankingIcons/4.png"},
-        {name: "2nd Class Rookie",        file: "RankingIcons/5.png"},
-        {name: "1st Class Rookie",        file: "RankingIcons/6.png"},
-        {name: "3rd Class Squire",        file: "RankingIcons/7.png"}, // Spaceship
-        {name: "2nd Class Squire",        file: "RankingIcons/8.png"}, // Spaceship
-        {name: "1st Class Squire",        file: "RankingIcons/9.png"}, // Spaceship
-        {name: "3rd Class Knight",        file: "RankingIcons/10.png"}, // Hexagon
-        {name: "2nd Class Knight",        file: "RankingIcons/11.png"}, // Hexagon
-        {name: "1st Class Knight",        file: "RankingIcons/12.png"}, // Hexagonn
-        {name: "Chief",                   file: "RankingIcons/13.png"}, // Chief
-        {name: "Senior Chief",            file: "RankingIcons/14.png"}, // Senior Chief
-        {name: "Master Chief",            file: "RankingIcons/15.png"}, // Master Chief
-        {name: "3rd Ensign",              file: "RankingIcons/16.png"}, // Ensign
-        {name: "2nd Ensign",              file: "RankingIcons/17.png"}, // Ensign
-        {name: "1st Ensign",              file: "RankingIcons/18.png"}, // Ensign
+        {name: "4th Class Cadet",        file: "RankingIcons/3.png"}, // 4th Class
+        {name: "2nd Class Cadet",        file: "RankingIcons/4.png"},
+        {name: "2nd Class Cadet",        file: "RankingIcons/5.png"},
+        {name: "1st Class Cadet",        file: "RankingIcons/6.png"},
+        {name: "3rd Class Crewmember",        file: "RankingIcons/7.png"}, // Spaceship
+        {name: "2nd Class Crewmember",        file: "RankingIcons/8.png"}, // Spaceship
+        {name: "1st Class Crewmember",        file: "RankingIcons/9.png"}, // Spaceship
+        {name: "3rd Class Petty Officer",        file: "RankingIcons/10.png"}, // Hexagon
+        {name: "2nd Class Petty Officer",        file: "RankingIcons/11.png"}, // Hexagon
+        {name: "1st Class Petty Officer",        file: "RankingIcons/12.png"}, // Hexagonn
+        {name: "Chief Petty Officer",                   file: "RankingIcons/13.png"}, // Chief
+        {name: "Chief Petty Officer Sr.",            file: "RankingIcons/14.png"}, // Senior Chief
+        {name: "Chief Petty Officer Master",            file: "RankingIcons/15.png"}, // Master Chief
+        {name: "3rd Class Ensign",              file: "RankingIcons/16.png"}, // Ensign
+        {name: "2nd Class Ensign",              file: "RankingIcons/17.png"}, // Ensign
+        {name: "1st Class Ensign",              file: "RankingIcons/18.png"}, // Ensign
         {name: "2nd Class Lt. Jr. Grade", file: "RankingIcons/19.png"},
         {name: "1st Class Lt. Jr. Grade", file: "RankingIcons/20.png"},
         {name: "3rd Class Lt.",           file: "RankingIcons/21.png"},
