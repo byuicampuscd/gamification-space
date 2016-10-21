@@ -48,7 +48,7 @@
       pointsTop: pointsTop,
       pointsBot: pointsPerRank,
       name: constant.RANKS[rankIndex].name,
-      file: constant.RANKS[rankIndex].file,
+      file: context.baseURL + constant.RANKS[rankIndex].file,
       width: makeWidth(pointsTop, pointsPerRank, constant.RANK_POINTS_LEFT, constant.BARS_RIGHT)
     };
   }
@@ -95,7 +95,10 @@
             earned: 0,
             possible: 0,
             gradePer: 0
-          }
+          },
+          baseURL: "/content/enforced/10011-Joshua-McKinney-Sandbox-CO/gamificationSpace/",
+          cssLoc: "uiInterface.css",
+          backgroundLoc: "Nebula Background.jpg"
         };
 
         for (i = 0; i < grades.length; ++i) {
