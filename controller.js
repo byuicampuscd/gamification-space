@@ -94,6 +94,7 @@
           points: {
             earned: 0,
             possible: 0,
+            attempted: 0,
             gradePer: 0
           },
           baseURL: "/content/enforced/10011-Joshua-McKinney-Sandbox-CO/gamificationSpace/",
@@ -101,6 +102,7 @@
           backgroundLoc: "Nebula Background.jpg"
         };
 
+/*
         for (i = 0; i < grades.length; ++i) {
           if (grades[i].weightedDenominator !== null) {
             context.points.possible += grades[i].weightedDenominator;
@@ -116,10 +118,34 @@
         } else if (finalGrade.pointsDenominator !== null) {
           context.points.gradePer = finalGrade.pointsNumerator / 1000;
         }
+*/
 
+        for (i = 0; i < grades.length; ++i) {
+          if (grades[i].weightedDenominator !== null) {
+            context.points.attempted += grades[i].weightedDenominator;
+            context.points.earned += grades[i].weightedNumerator;
+          } else if (grades[i].pointsDenominator !== null) {
+            context.points.attempted += grades[i].pointsDenominator;
+            context.points.earned += grades[i].pointsNumerator;
+          }
+        }
+
+        if (context.points.attempted !== 0) {
+          context.points.gradePer = context.points.earned / context.points.attempted;
+        }
+      
         if (context.points.gradePer > 1.0) {
           context.points.gradePer = 1.0;
         }
+
+        if (finalGrade.weightedDenominator !== null) {
+          context.points.possible = finalGrade.weightedDenominator;
+          context.points.earned = finalGrade.weightedNumerator;
+        } else if (finalGrade.pointsDenominator !== null) {
+          context.points.possible = finalGrade.pointsDenominator;
+          context.points.earned = finalGrade.pointsNumerator;
+        }
+
         //call them all
         addRank(context);
         addHealth(context);
