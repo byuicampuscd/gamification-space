@@ -28,9 +28,9 @@ var constant = {
         {name: "1st Class Ensign",           file: "RankingIcons/18.png"},
         {name: "2nd Class Lt. Jr. Grade",    file: "RankingIcons/19.png"},
         {name: "1st Class Lt. Jr. Grade",    file: "RankingIcons/20.png"},
-        {name: "3rd Class Lt.",              file: "RankingIcons/21.png"},
-        {name: "2nd Class Lt.",              file: "RankingIcons/22.png"},
-        {name: "1st Class Lt.",              file: "RankingIcons/23.png"},
+        {name: "3rd Class Lieutenant",       file: "RankingIcons/21.png"},
+        {name: "2nd Class Lieutenant",       file: "RankingIcons/22.png"},
+        {name: "1st Class Lieutenant",       file: "RankingIcons/23.png"},
         {name: "Lt. Commander",              file: "RankingIcons/24.png"},
         {name: "Commander",                  file: "RankingIcons/25.png"},
         {name: "Captain",                    file: "RankingIcons/26.png"},
@@ -38,7 +38,7 @@ var constant = {
         {name: "Vice Admiral",               file: "RankingIcons/28.png"},
         {name: "Admiral",                    file: "RankingIcons/29.png"},
         {name: "Delegate to U.W. Assembly",  file: "RankingIcons/30.png"},
-        {name: "United Worlds Assembly",     file: "RankingIcons/31.png"}
+        {name: "United Worlds President",    file: "RankingIcons/31.png"}
     ]
 };
 /* beautify preserve:end */

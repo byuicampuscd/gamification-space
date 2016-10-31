@@ -123,6 +123,10 @@ left: -10px;*/
     fill: #F58E80;
 }
 
+#gamificationMain .healthOpacity {
+    opacity: 1;
+}
+
 #gamificationMain .blueVeryDark {
     fill: #3F6787;
 }

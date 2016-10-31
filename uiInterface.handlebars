@@ -19,7 +19,7 @@
         <!-- text -->
         <text transform="matrix(1 0 0 1 418.165 72.9194)" font-size="37" class="white bold">RANK</text>
         <line x1="526" y1="34.6" x2="526" y2="84.2" style="fill:none;stroke-width:3;stroke:#FFF" />
-        <text transform="matrix(1 0 0 1 531.832 73)" font-size="37" class="white light">{{rank.name}}</text>
+        <text transform="matrix(1 0 0 1 531.832 73)" font-size="32" class="white light">{{rank.name}}</text>
         <text transform="matrix(1 0 0 1 419.665 87.1694)" font-size="14" class="white bold">POLSC - 150</text>
         
         <!-- outlines -->
@@ -30,7 +30,7 @@
     </g>
     <g id="experience" transform="translate(-290 -81)">
         <!-- text -->
-        <text transform="matrix(1.37 0 0 1.13 709.0342 241.0176)" font-size="15" letter-spacing="-0.73" class="blueLight">EXPERIENCE</text>
+        <text transform="matrix(1.37 0 0 1.13 709.0342 241.0176)" font-size="14" letter-spacing="-0.73" class="blueLight">EXPERIENCE</text>
         <text transform="matrix(1 0 0 1.13 709.0342 263.418)">
             <tspan font-size="21" class="blueLight bold">{{points.earned}}</tspan>
             <tspan font-size="21" class="blueDark light">&#x2F;{{points.possible}}</tspan>
@@ -53,7 +53,7 @@
     </g>
     <g id="health">
         <!-- text -->
-        <text transform="matrix(1.37 0 0 1.13 419 241.0996)" font-size="15" letter-spacing="-0.73" class="redLight">HEALTH</text>
+        <text transform="matrix(1.37 0 0 1.13 419 241.0996)" font-size="14" letter-spacing="-0.73" class="redLight">HEALTH</text>
         <text transform="matrix(1 0 0 1.13 419 263.5)">
             <tspan font-size="21" class="redLight bold">{{health.pointsTop}}</tspan>
             <tspan font-size="21" class="redDark light">&#x2F;{{health.pointsBot}}</tspan>
@@ -67,13 +67,13 @@
         <rect x="427.3" y="206" width="{{health.width}}" height="10.3" class="redLight" />
         
         <!-- icon -->
-        <path d="M369.8 217.7v-0.5c-6.9-18.2-31.4-10.7-24.4 8.3 7 19 24.4 30.1 24.4 30.1v0.5c0 0 17.4-11.1 24.4-30.1C401.1 207 376.7 199.6 369.8 217.7z" class="redDark" />
-        <circle cx="383.9" cy="218.4" r="6.9" class="redLight" />
+        <path d="M369.8 217.7v-0.5c-6.9-18.2-31.4-10.7-24.4 8.3 7 19 24.4 30.1 24.4 30.1v0.5c0 0 17.4-11.1 24.4-30.1C401.1 207 376.7 199.6 369.8 217.7z" class="redDark healthOpacity" />
+        <circle cx="383.9" cy="218.4" r="6.9" class="redLight healthOpacity" />
 
     </g>
     <g id="level" transform="translate(290 81)">
         <!-- text -->
-        <text transform="matrix(1.37 0 0 1.13 419 159.8662)" font-size="15" letter-spacing="-0.73" class="yellowLight">RANK POINTS</text>
+        <text transform="matrix(1.37 0 0 1.13 419 159.8662)" font-size="14" letter-spacing="-0.73" class="yellowLight">POINTS TO PROMOTION</text>
         <text transform="matrix(1 0 0 1.13 419 182.2666)">
             <tspan font-size="21" class="yellowLight bold">{{rank.pointsTop}}</tspan>
             <tspan font-size="21" class="yellowDark2 light">&#x2F;{{rank.pointsBot}}</tspan>

@@ -57,7 +57,7 @@
     "use strict";
 
     var pointsTop = Math.round(context.points.gradePer * 100);
-
+    
     context.health = {
       pointsTop: pointsTop,
       pointsBot: 100,
@@ -81,7 +81,9 @@
     valence.run(function (err, data) {
       var i,
           grades,
-          finalGrade;
+          finalGrade,
+          opacity = 1,
+          healthPics;
 
       if (err === null) {
         console.log("No error");
@@ -102,31 +104,15 @@
           backgroundLoc: "Nebula Background.jpg"
         };
 
-/*
         for (i = 0; i < grades.length; ++i) {
-          if (grades[i].weightedDenominator !== null) {
-            context.points.possible += grades[i].weightedDenominator;
-            context.points.earned += grades[i].weightedNumerator;
-          } else if (grades[i].pointsDenominator !== null) {
-            context.points.possible += grades[i].pointsDenominator;
-            context.points.earned += grades[i].pointsNumerator;
-          }
-        }
-
-        if (finalGrade.weightedDenominator !== null) {
-          context.points.gradePer = finalGrade.weightedNumerator / 1000;
-        } else if (finalGrade.pointsDenominator !== null) {
-          context.points.gradePer = finalGrade.pointsNumerator / 1000;
-        }
-*/
-
-        for (i = 0; i < grades.length; ++i) {
-          if (grades[i].weightedDenominator !== null) {
-            context.points.attempted += grades[i].weightedDenominator;
-            context.points.earned += grades[i].weightedNumerator;
-          } else if (grades[i].pointsDenominator !== null) {
-            context.points.attempted += grades[i].pointsDenominator;
-            context.points.earned += grades[i].pointsNumerator;
+          if (grades[i].gradeType === "Numeric") {
+            if (grades[i].weightedDenominator !== null) {
+              context.points.attempted += grades[i].weightedDenominator;
+              context.points.earned += grades[i].weightedNumerator;
+            } else if (grades[i].pointsDenominator !== null) {
+              context.points.attempted += grades[i].pointsDenominator;
+              context.points.earned += grades[i].pointsNumerator;
+            }
           }
         }
 
@@ -153,6 +139,19 @@
         console.log("context:", context);
         
         document.querySelector('#gamificationMain').innerHTML = Handlebars.templates.uiInterface(context);
+
+        healthPics = document.getElementsByClassName('healthOpacity')
+        opacity = context.health.pointsTop / context.health.pointsBot;
+
+        if (opacity <= 0.6) {
+          opacity = .1
+        } else {
+          opacity = 2.25 * opacity - 1.25;
+        }
+
+        for(i = 0; i < healthPics.length; i++) {
+          healthPics[i].style.opacity = opacity;
+        }
       } else {
         console.log("ERROR");
         document.querySelector('#gamificationMain').innerHTML = "<h1>Error in loading the widget. Please let your professor know!</h1>";
