@@ -49,7 +49,9 @@
       pointsBot: pointsPerRank,
       name: constant.RANKS[rankIndex].name,
       file: context.baseURL + constant.RANKS[rankIndex].file,
-      width: makeWidth(pointsTop, pointsPerRank, constant.RANK_POINTS_LEFT, constant.BARS_RIGHT)
+      width: makeWidth(pointsTop, pointsPerRank, constant.RANK_POINTS_LEFT, constant.BARS_RIGHT),
+      curRank: rankIndex,
+      totalRanks: constant.RANKS.length
     };
   }
 
@@ -68,6 +70,7 @@
   function addExp(context) {
     "use strict";
 
+    context.points.earned = Math.round(context.points.earned);
     var pointsTop = Math.round(context.points.earned / context.points.possible * 100);
 
     context.experience = {

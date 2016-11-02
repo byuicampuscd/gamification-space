@@ -20,7 +20,10 @@
         <text transform="matrix(1 0 0 1 418.165 72.9194)" font-size="37" class="white bold">RANK</text>
         <line x1="526" y1="34.6" x2="526" y2="84.2" style="fill:none;stroke-width:3;stroke:#FFF" />
         <text transform="matrix(1 0 0 1 531.832 73)" font-size="32" class="white light">{{rank.name}}</text>
-        <text transform="matrix(1 0 0 1 419.665 87.1694)" font-size="14" class="white bold">POLSC - 150</text>
+        <text transform="matrix(1 0 0 1 419.665 95)">
+	    <tspan font-size="23" class="white bold">{{rank.curRank}}</tspan>
+	    <tspan font-size="23" class="white light">&#x2F;{{rank.totalRanks}}</tspan>
+	</text>
         
         <!-- outlines -->
         <rect x="339" y="35.5" width="62" height="62" class="outline whiteOutline" />
@@ -30,7 +33,7 @@
     </g>
     <g id="experience" transform="translate(-290 -81)">
         <!-- text -->
-        <text transform="matrix(1.37 0 0 1.13 709.0342 241.0176)" font-size="14" letter-spacing="-0.73" class="blueLight">EXPERIENCE</text>
+        <text transform="matrix(1.37 0 0 1.13 709.0342 241.0176)" font-size="13" letter-spacing="-0.73" class="blueLight">EXPERIENCE</text>
         <text transform="matrix(1 0 0 1.13 709.0342 263.418)">
             <tspan font-size="21" class="blueLight bold">{{points.earned}}</tspan>
             <tspan font-size="21" class="blueDark light">&#x2F;{{points.possible}}</tspan>
@@ -53,7 +56,7 @@
     </g>
     <g id="health">
         <!-- text -->
-        <text transform="matrix(1.37 0 0 1.13 419 241.0996)" font-size="14" letter-spacing="-0.73" class="redLight">HEALTH</text>
+        <text transform="matrix(1.37 0 0 1.13 419 241.0996)" font-size="13" letter-spacing="-0.73" class="redLight">HEALTH</text>
         <text transform="matrix(1 0 0 1.13 419 263.5)">
             <tspan font-size="21" class="redLight bold">{{health.pointsTop}}</tspan>
             <tspan font-size="21" class="redDark light">&#x2F;{{health.pointsBot}}</tspan>
@@ -73,7 +76,7 @@
     </g>
     <g id="level" transform="translate(290 81)">
         <!-- text -->
-        <text transform="matrix(1.37 0 0 1.13 419 159.8662)" font-size="14" letter-spacing="-0.73" class="yellowLight">POINTS TO PROMOTION</text>
+        <text transform="matrix(1.37 0 0 1.13 419 159.8662)" font-size="13" letter-spacing="-0.73" class="yellowLight">POINTS TO PROMOTION</text>
         <text transform="matrix(1 0 0 1.13 419 182.2666)">
             <tspan font-size="21" class="yellowLight bold">{{rank.pointsTop}}</tspan>
             <tspan font-size="21" class="yellowDark2 light">&#x2F;{{rank.pointsBot}}</tspan>
@@ -90,6 +93,4 @@
         <path d="M344.7 138.1c0 0 1.8 24.9 25.1 36.7v-49C369.8 125.7 357.4 133.2 344.7 138.1z" class="yellowDark2" />
         <path transform="translate(-0.15 0)" d="M394.8 138.1c-12.7-4.9-25-12.4-25.1-12.4v0h0v0 49.1l0 0h0l0 0C393 163.1 394.8 138.1 394.8 138.1z" class="yellowLight" />
     </g>
-    <circle cx="938" cy="300" r="3" style="fill:none; stroke:red; "/>
 </svg>
-<img src="testUI.jpg" style="width:100%">
