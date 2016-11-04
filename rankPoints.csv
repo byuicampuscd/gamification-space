@@ -1,0 +1,32 @@
+name,file,Step,threshold
+Citizen,RankingIcons/1.png,0,1
+Recruit,RankingIcons/2.png,1,2
+4th Class Rookie,RankingIcons/3.png,1.05,3.05
+2nd Class Rookie,RankingIcons/4.png,1.1025,4.1525
+2nd Class Rookie,RankingIcons/5.png,1.157625,5.310125
+1st Class Rookie,RankingIcons/6.png,1.21550625,6.52563125
+3rd Class Squire,RankingIcons/7.png,1.276281563,7.801912813
+2nd Class Squire,RankingIcons/8.png,1.340095641,9.142008453
+1st Class Squire,RankingIcons/9.png,1.407100423,10.54910888
+3rd Class Knight,RankingIcons/10.png,1.477455444,12.02656432
+2nd Class Knight,RankingIcons/11.png,1.551328216,13.57789254
+1st Class Knight,RankingIcons/12.png,1.628894627,15.20678716
+Chief,RankingIcons/13.png,1.710339358,16.91712652
+Senior Chief,RankingIcons/14.png,1.795856326,18.71298285
+Master Chief,RankingIcons/15.png,1.885649142,20.59863199
+3rd Ensign,RankingIcons/16.png,1.979931599,22.57856359
+2nd Ensign,RankingIcons/17.png,2.078928179,24.65749177
+1st Ensign,RankingIcons/18.png,2.182874588,26.84036636
+2nd Class Lt. Jr. Grade,RankingIcons/19.png,2.292018318,29.13238467
+1st Class Lt. Jr. Grade,RankingIcons/20.png,2.406619234,31.53900391
+3rd Class Lt.,RankingIcons/21.png,2.526950195,34.0659541
+2nd Class Lt.,RankingIcons/22.png,2.653297705,36.71925181
+1st Class Lt.,RankingIcons/23.png,2.78596259,39.5052144
+Lt. Commander,RankingIcons/24.png,2.92526072,42.43047512
+Commander,RankingIcons/25.png,3.071523756,45.50199887
+Captain,RankingIcons/26.png,3.225099944,48.72709882
+Rear Admiral,RankingIcons/27.png,3.386354941,52.11345376
+Vice Admiral,RankingIcons/28.png,3.555672688,55.66912645
+Admiral,RankingIcons/29.png,3.733456322,59.40258277
+Delegate,RankingIcons/30.png,3.920129138,63.32271191
+President,RankingIcons/31.png,4.116135595,67.4388475
