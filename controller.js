@@ -1,5 +1,5 @@
 /*jslint plusplus: true, browser: true, devel: true */
-/*global constant, Handlebars, valence, runNoValence*/
+/*global constant, Handlebars, valence, runNoValence, getCSV*/
 
 (function () {
   var useValence = true;
@@ -30,6 +30,18 @@
     var pointsPerRank,
         rankIndex,
         pointsTop;
+
+    getCSV(function(error, scenario)
+    {
+      if (error)
+      {
+        console.log("error:", error);
+        return;
+      }
+      console.log("scenario:", scenario);
+
+      
+    });
 
     pointsPerRank = Math.floor(context.points.possible / constant.RANKS.length);
     rankIndex = Math.floor(context.points.earned / pointsPerRank);
