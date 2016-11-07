@@ -1,32 +1,32 @@
-index,rankName,lowerBound,imgLoc
-1,Citizen,0,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/1.png
-2,Recruit,20,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/2.png
-3,Cadet 4th class,40,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/3.png
-4,Cadet 3rd class,60,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/4.png
-5,Cadet 2nd class,80,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/5.png
-6,Cadet 1st class,100,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/6.png
-7,Crewmember 3rd Class,140,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/7.png
-8,Crewmember 2nd Class,180,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/8.png
-9,Crewmember 1st Class,220,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/9.png
-10,Petty Officer 3rd Class,260,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/10.png
-11,Petty Officer 2nd Class,300,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/11.png
-12,Petty Officer 1st Class,340,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/12.png
-13,Chief Petty Officer,380,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/13.png
-14,Chief Petty Officer Senior,420,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/14.png
-15,Chief Petty Officer Master,460,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/15.png
-16,Ensign 3rd Class,500,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/16.png
-17,Ensign 2nd Class,540,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/17.png
-18,Ensign 1st Class,580,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/18.png
-19,Lieutenant Junior Grade 2nd Class,620,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/19.png
-20,Lieutenant Junior Grade 1st Class,660,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/20.png
-21,Lieutenant 3rd Class,700,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/21.png
-22,Lieutenant 2nd Class,740,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/22.png
-23,Lieutenant 1st Class,780,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/23.png
-24,Lieutenant commander,820,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/24.png
-25,Commander,860,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/25.png
-26,Captain,900,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/26.png
-27,Rear Admiral,950,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/27.png
-28,Vice Admiral,1000,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/28.png
-29,Admiral,1060,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/29.png
-30,Delegate,1120,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/30.png
-31,President,1200,https://content.byui.edu/file/c1647583-af73-4ed4-b70e-3fb5d814247f/1/31.png
+index,name,lowerBound,file
+1,Citizen,0,RankingIcons/1.png
+2,Recruit,20,RankingIcons/2.png
+3,Cadet 4th class,40,RankingIcons/3.png
+4,Cadet 3rd class,60,RankingIcons/4.png
+5,Cadet 2nd class,80,RankingIcons/5.png
+6,Cadet 1st class,100,RankingIcons/6.png
+7,Crewmember 3rd Class,140,RankingIcons/7.png
+8,Crewmember 2nd Class,180,RankingIcons/8.png
+9,Crewmember 1st Class,220,RankingIcons/9.png
+10,Petty Officer 3rd Class,260,RankingIcons/10.png
+11,Petty Officer 2nd Class,300,RankingIcons/11.png
+12,Petty Officer 1st Class,340,RankingIcons/12.png
+13,Chief Petty Officer,380,RankingIcons/13.png
+14,Chief Petty Officer Senior,420,RankingIcons/14.png
+15,Chief Petty Officer Master,460,RankingIcons/15.png
+16,Ensign 3rd Class,500,RankingIcons/16.png
+17,Ensign 2nd Class,540,RankingIcons/17.png
+18,Ensign 1st Class,580,RankingIcons/18.png
+19,Lieutenant Junior Grade 2nd Class,620,RankingIcons/19.png
+20,Lieutenant Junior Grade 1st Class,660,RankingIcons/20.png
+21,Lieutenant 3rd Class,700,RankingIcons/21.png
+22,Lieutenant 2nd Class,740,RankingIcons/22.png
+23,Lieutenant 1st Class,780,RankingIcons/23.png
+24,Lieutenant Commander,820,RankingIcons/24.png
+25,Commander,860,RankingIcons/25.png
+26,Captain,900,RankingIcons/26.png
+27,Rear Admiral,950,RankingIcons/27.png
+28,Vice Admiral,1000,RankingIcons/28.png
+29,Admiral,1060,RankingIcons/29.png
+30,Delegate,1120,RankingIcons/30.png
+31,President,1200,RankingIcons/31.png

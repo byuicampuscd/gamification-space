@@ -39,9 +39,9 @@ var getCSV = (function () {
             var fileData = d3.csvParse(fileText, function (d) {
                 return {
                     index: parseInt(d.index),
-                    rankName: d.rankName,
+                    name: d.name,
                     lowerBound: parseInt(d.lowerBound),
-                    imgLoc: d.imgLoc
+                    file: d.file
                 };
             });
 

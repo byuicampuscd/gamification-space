@@ -24,15 +24,28 @@
     return Math.round(percent * diff);
   }
 
-  function addRank(context) {
+  /**
+   * ADD_RANK_AND_FINISH:
+   * NOTE: Call this last!
+   *    This will add the rank to the context and then add the rest to the HTML doc. Because the
+   *   call to the CSV is async, a simple solution to the problem that presents is to call this
+   *   function at the very end.
+   */
+  function addRankAndFinish(context) {
     "use strict";
 
     var pointsPerRank,
+        pointsForRank,
         rankIndex,
-        pointsTop;
+        pointsTop,
+        length = 0;
 
     getCSV(function(error, scenario)
     {
+      var i,
+          opacity = 1,
+          healthPics;
+
       if (error)
       {
         console.log("error:", error);
@@ -40,33 +53,65 @@
       }
       console.log("scenario:", scenario);
 
+      for (i = 0; i < scenario.length; ++i) {
+        constant.RANKS[i] = scenario[i];
+        length += 1;
+        if (context.points.earned > constant.RANKS[i].lowerBound) {
+          rankIndex = i;
+        }
+      }
+
+      if (rankIndex != length - 1) {
+        pointsForRank = constant.RANKS[rankIndex+1].lowerBound - constant.RANKS[rankIndex].lowerBound;
+        pointsTop = context.points.earned - constant.RANKS[rankIndex].lowerBound;
+      } else {
+        // If on the last rank, just put 0
+        pointsForRank = 0;
+        pointsTop = 0;
+      }
+
+      // pointsPerRank = Math.floor(context.points.possible / constant.RANKS.length);
+      // rankIndex = Math.floor(context.points.earned / pointsPerRank);
+
+      //if (rankIndex > constant.RANKS.length - 1) {
+      //rankIndex = constant.RANKS.length - 1;
+      //}
+
+      if (pointsTop > pointsForRank) {
+        pointsTop = pointsForRank;
+      }
+
+      context.rank = {
+        pointsTop: pointsTop,
+        pointsBot: pointsForRank,
+        name: constant.RANKS[rankIndex].name,
+        file: context.baseURL + constant.RANKS[rankIndex].file,
+        width: makeWidth(pointsTop, pointsForRank, constant.RANK_POINTS_LEFT, constant.BARS_RIGHT),
+        curRank: rankIndex,
+        totalRanks: constant.RANKS.length
+      };
+
+      document.querySelector('#gamificationMain').innerHTML = Handlebars.templates.uiInterface(context);
       
+      healthPics = document.getElementsByClassName('healthOpacity')
+      opacity = context.health.pointsTop / context.health.pointsBot;
+
+      if (opacity <= 0.6) {
+        opacity = .1
+      } else {
+        opacity = 2.25 * opacity - 1.25;
+      }
+
+      for(i = 0; i < healthPics.length; i++) {
+        healthPics[i].style.opacity = opacity;
+      }
     });
-
-    pointsPerRank = Math.floor(context.points.possible / constant.RANKS.length);
-    rankIndex = Math.floor(context.points.earned / pointsPerRank);
-
-    if (rankIndex > constant.RANKS.length - 1) {
-      rankIndex = constant.RANKS.length - 1;
-    }
-
-    pointsTop = Math.floor(context.points.earned - (rankIndex * pointsPerRank));
-
-    if (pointsTop > pointsPerRank) {
-      pointsTop = pointsPerRank;
-    }
-
-    context.rank = {
-      pointsTop: pointsTop,
-      pointsBot: pointsPerRank,
-      name: constant.RANKS[rankIndex].name,
-      file: context.baseURL + constant.RANKS[rankIndex].file,
-      width: makeWidth(pointsTop, pointsPerRank, constant.RANK_POINTS_LEFT, constant.BARS_RIGHT),
-      curRank: rankIndex,
-      totalRanks: constant.RANKS.length
-    };
   }
 
+  /**
+   * ADD_HEALTH:
+   *     This will add health to the context
+   */
   function addHealth(context) {
     "use strict";
 
@@ -79,6 +124,10 @@
     };
   }
 
+  /**
+   * ADD_EXP:
+   *     This will experience information to the context
+   */
   function addExp(context) {
     "use strict";
 
@@ -94,11 +143,8 @@
 
   if (useValence) {
     valence.run(function (err, data) {
-      var i,
-          grades,
-          finalGrade,
-          opacity = 1,
-          healthPics;
+      var grades,
+          finalGrade;
 
       if (err === null) {
         console.log("No error");
@@ -148,27 +194,10 @@
         }
 
         //call them all
-        addRank(context);
         addHealth(context);
         addExp(context);
-        console.log("context:", context);
-        
-        document.querySelector('#gamificationMain').innerHTML = Handlebars.templates.uiInterface(context);
-
-        healthPics = document.getElementsByClassName('healthOpacity')
-        opacity = context.health.pointsTop / context.health.pointsBot;
-
-        if (opacity <= 0.6) {
-          opacity = .1
-        } else {
-          opacity = 2.25 * opacity - 1.25;
-        }
-
-        for(i = 0; i < healthPics.length; i++) {
-          healthPics[i].style.opacity = opacity;
-        }
+        addRankAndFinish(context);
       } else {
-        console.log("ERROR");
         document.querySelector('#gamificationMain').innerHTML = "<h1>Error in loading the widget. Please let your professor know!</h1>";
       }
     });
