@@ -4,6 +4,10 @@
 (function () {
   var useValence = true;
 
+  /**
+   * MAKE_WIDTH:
+   *     This will get the width of the progress bar
+   */
   function makeWidth(top, bot, left, right) {
     "use strict";
 
@@ -40,6 +44,7 @@
         pointsTop,
         length = 0;
 
+    // This will get the CSV and put it into the context
     getCSV(function(error, scenario)
     {
       var i,
@@ -92,7 +97,8 @@
       };
 
       document.querySelector('#gamificationMain').innerHTML = Handlebars.templates.uiInterface(context);
-      
+
+      // This is called AFTER the previous statement because there needs to exist elements with the class name 'healthOpacity'
       healthPics = document.getElementsByClassName('healthOpacity')
       opacity = context.health.pointsTop / context.health.pointsBot;
 
@@ -141,6 +147,7 @@
     };
   }
 
+  /******* THIS IS WHERE IT STARTS! *********/
   if (useValence) {
     valence.run(function (err, data) {
       var grades,
@@ -160,11 +167,12 @@
             attempted: 0,
             gradePer: 0
           },
-          baseURL: "/content/enforced/10011-Joshua-McKinney-Sandbox-CO/gamificationSpace/",
+          baseURL: "/content/enforced/10011-Joshua-McKinney-Sandbox-CO/gamificationSpace/", /** WARNING!!!! This NEEDS to change when you import to a new course!!!! **/
           cssLoc: "uiInterface.css",
           backgroundLoc: "Nebula Background.jpg"
         };
 
+        // Go through all grades and add up the numerator and denominator
         for (i = 0; i < grades.length; ++i) {
           if (grades[i].gradeType === "Numeric") {
             if (grades[i].weightedDenominator !== null) {
@@ -177,14 +185,17 @@
           }
         }
 
+        // The percentage represents the health
         if (context.points.attempted !== 0) {
           context.points.gradePer = context.points.earned / context.points.attempted;
         }
-      
+
+        // Health should not be over 100%
         if (context.points.gradePer > 1.0) {
           context.points.gradePer = 1.0;
         }
 
+        // Use the final grade for experience
         if (finalGrade.weightedDenominator !== null) {
           context.points.possible = finalGrade.weightedDenominator;
           context.points.earned = finalGrade.weightedNumerator;
@@ -202,6 +213,7 @@
       }
     });
   } else {
+    // TODO: This needs to exist and do something! See the issue on GitHub
     runNoValence();
   }
 }());
