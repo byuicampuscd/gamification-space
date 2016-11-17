@@ -2,7 +2,7 @@
 
 ## BEFORE adding to a course
 
-Line 170 of the controller.js refers to a Unique Course Identifier. This course identifier must be changed to reflect the identifier for the course you will be adding the tool to. To do this, navigate to "Manage Files" and copy the bolded directory at top (content > enforced > IDENTIFIER.  
+Line 170 of the controller.js refers to a Unique Course Identifier. This course identifier must be changed to reflect the identifier for the course you will be adding the tool to. To do this, navigate to "Manage Files" and copy the bolded directory at top (content > enforced > IDENTIFIER).  
 
 > baseURL: "/content/enforced/10011-Joshua-McKinney-Sandbox-CO/gamificationSpace/"
 
