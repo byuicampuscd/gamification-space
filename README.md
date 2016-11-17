@@ -33,4 +33,4 @@
   <!--<script src="https://localhost:8000/getCSV.js"></script>-->
 ~~~
 
-6. On your freshly copied Homepage, select an option that allows you to have a full-width top panel (such as "Large Left Panel") and add your newly created widget to it.
+On your freshly copied Homepage, select an option that allows you to have a full-width top panel (such as "Large Left Panel") and add your newly created widget to it.
