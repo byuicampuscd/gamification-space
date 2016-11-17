@@ -34,6 +34,7 @@ becomes
   <script src="/content/enforced/UNIQUE COURSE IDENTIFIER/gamificationSpace/controller.js"></script>
   <p></p>
   <script src="/content/enforced/UNIQUE COURSE IDENTIFIER/gamificationSpace/getCSV.js"></script>
+  <!--USE TAGS BELOW TO DEBUG WITH A LIVE DEVELOPMENT SERVER-->
   <!--<script src="https://localhost:8000/settings.js"></script>-->
   <p></p>
   <!--<script src="https://localhost:8000/handlebarsTemplate.js"></script>-->
@@ -44,3 +45,5 @@ becomes
 ~~~
 
 On your freshly copied Homepage, select an option that allows you to have a full-width top panel (such as "Large Left Panel") and add your newly created widget to it.
+
+
