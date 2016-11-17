@@ -1,5 +1,5 @@
 {
-    "bb.beautify.onSave": true,
+    "bb.beautify.onSave": false,
     "language": {
         "handlebars": {
             "bb.beautify.onSave": false
