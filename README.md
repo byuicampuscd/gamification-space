@@ -1,5 +1,13 @@
 # gamification-space
 
+## BEFORE adding to a course
+
+Line 170 of the controller.js refers to a Unique Course Identifier. This course identifier must be changed to reflect the identifier for the course you will be adding the tool to. To do this, navigate to "Manage Files" and copy the bolded directory at top (content > enforced > IDENTIFIER.  
+
+> baseURL: "/content/enforced/10011-Joshua-McKinney-Sandbox-CO/gamificationSpace/"
+becomes
+> baseURL: "/content/enforced/9001-your-course-identifier/gamificationSpace/"
+
 ## Adding the tool to a Brightspace Course
 
 1. First, add the contents of this project to the course in a folder named "gamificationSpace"
