@@ -8,6 +8,7 @@
 4. Click into "Widgets" and create a new widget with a meaningful name and description.
 5. On the "Content" tab of the Widgets menu, insert the following code. Note that the "UNIQUE COURSE IDENTIFIER" will be specific to the course you are modifying:
 
+~~~
   <div id="gamificationMain"></div>
   <script>// <![CDATA[
   var jamGamifiction = "{OrgUnitPath}";
@@ -30,5 +31,6 @@
   <!--<script src="https://localhost:8000/controller.js"></script>-->
   <p></p>
   <!--<script src="https://localhost:8000/getCSV.js"></script>-->
+~~~
 
 6. On your freshly copied Homepage, select an option that allows you to have a full-width top panel (such as "Large Left Panel") and add your newly created widget to it.
