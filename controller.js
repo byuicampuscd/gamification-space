@@ -42,11 +42,10 @@
             pointsForRank,
             rankIndex,
             pointsTop,
-            length,
             pointsUntilPromotion = 0;
 
         // This will get the CSV and put it into the context
-        getCSV(function (error, scenario) {
+        getCSV(function (error, csvData) {
             var i,
                 opacity = 1,
                 healthPics;
@@ -55,20 +54,22 @@
                 console.log("error:", error);
                 return;
             }
-            console.log("scenario:", scenario);
+            console.log("csvData:", csvData);
 
-            for (i = 0; i < scenario.length; ++i) {
-                constant.RANKS[i] = scenario[i];
-                length += 1;
-                if (context.points.earned > constant.RANKS[i].lowerBound) {
+
+            // Set rank based on points earned in course.
+            for (i = 0; i < csvData.length; ++i) {
+                constant.RANKS[i] = csvData[i];
+                if (context.points.earned >= constant.RANKS[i].lowerBound) {
                     rankIndex = i;
                 }
             }
 
-            if (rankIndex != length - 1) {
+            //If not highest rank
+            if (rankIndex !== constant.RANKS.length) {
                 pointsForRank = constant.RANKS[rankIndex + 1].lowerBound - constant.RANKS[rankIndex].lowerBound; // Points required for next rank
                 pointsTop = context.points.earned - constant.RANKS[rankIndex].lowerBound; // Earned in current rank
-                pointsUntilPromotion = pointsForRank - pointsTop; //Points needed to move up a rank.
+                pointsUntilPromotion = pointsForRank - pointsTop; //Points needed to move up a rank
             } else {
                 // If on the last rank, just put 0
                 pointsForRank = 0;
@@ -87,13 +88,14 @@
             }
 
             context.rank = {
-                pointsTop: pointsUntilPromotion, //Will display beneath "POINTS TO PROMOTION" see handlebarsTemplate.js line #33
-                //pointsBot: pointsForRank, //DO NOT DISPLAY pointsForRank: issue #15
+                pointsTop: pointsTop,
+                pointsBot: pointsForRank, //DOES NOT DISPLAY pointsForRank: issue #15
                 name: constant.RANKS[rankIndex].name,
                 file: context.baseURL + constant.RANKS[rankIndex].file,
                 width: makeWidth(pointsTop, pointsForRank, constant.RANK_POINTS_LEFT, constant.BARS_RIGHT),
                 curRank: rankIndex,
-                totalRanks: constant.RANKS.length
+                totalRanks: constant.RANKS.length,
+                pointsUntilPromotion: pointsUntilPromotion //Will display beneath "POINTS TO PROMOTION" see handlebarsTemplate.js line #33
             };
 
             document.querySelector('#gamificationMain').innerHTML = Handlebars.templates.uiInterface(context);
@@ -122,6 +124,11 @@
         "use strict";
 
         var pointsTop = Math.round(context.points.gradePer * 100);
+
+        //if the student has not attemped anything then they should have a 100 health
+        if(context.points.attempted === 0){
+             pointsTop = 100;
+        }
 
         context.health = {
             pointsTop: pointsTop,
@@ -153,65 +160,68 @@
             var grades,
                 finalGrade;
 
-            if (err === null) {
-                console.log("No error");
+            if (err !== null) {
+                document.querySelector('#gamificationMain').innerHTML = "<h1>Error in loading the widget. Please let your professor know!</h1>";
+                return;
+            }
 
-                grades = data.getGrades();
-                finalGrade = data.getFinalCalculatedGrade();
+            console.log("No error");
 
-                /** make gradePer **/
-                var context = {
-                    points: {
-                        earned: 0,
-                        possible: 0,
-                        attempted: 0,
-                        gradePer: 0
-                    },
-                    baseURL: "/content/enforced/10011-Joshua-McKinney-Sandbox-CO/gamificationSpace/",
-                    /** WARNING!!!! This NEEDS to change when you import to a new course!!!! **/
-                    cssLoc: "uiInterface.css",
-                    backgroundLoc: "Nebula Background.jpg"
-                };
+            grades = data.getGrades();
+            //print out grades
+            console.log("grades:", grades);
+            finalGrade = data.getFinalCalculatedGrade();
 
-                // Go through all grades and add up the numerator and denominator
-                for (i = 0; i < grades.length; ++i) {
-                    if (grades[i].gradeType === "Numeric") {
-                        if (grades[i].weightedDenominator !== null) {
-                            context.points.attempted += grades[i].weightedDenominator;
-                            context.points.earned += grades[i].weightedNumerator;
-                        } else if (grades[i].pointsDenominator !== null) {
-                            context.points.attempted += grades[i].pointsDenominator;
-                            context.points.earned += grades[i].pointsNumerator;
-                        }
+            /** make gradePer **/
+            var context = {
+                points: {
+                    earned: 0,
+                    possible: 0,
+                    attempted: 0,
+                    gradePer: null
+                },
+                baseURL: jamGamifiction + "gamificationSpace/",
+                /** WARNING!!!! This NEEDS to change when you import to a new course!!!! **/
+                cssLoc: "uiInterface.css",
+                backgroundLoc: "Nebula Background.jpg"
+            };
+
+            // Go through all grades and add up the numerator and denominator
+            for (i = 0; i < grades.length; ++i) {
+                if (grades[i].gradeType === "Numeric") {
+                    if (grades[i].weightedDenominator !== null) {
+                        context.points.attempted += grades[i].weightedDenominator;
+                        context.points.earned += grades[i].weightedNumerator;
+                    } else if (grades[i].pointsDenominator !== null) {
+                        context.points.attempted += grades[i].pointsDenominator;
+                        context.points.earned += grades[i].pointsNumerator;
                     }
                 }
-
-                // The percentage represents the health
-                if (context.points.attempted !== 0) {
-                    context.points.gradePer = context.points.earned / context.points.attempted;
-                }
-
-                // Health should not be over 100%
-                if (context.points.gradePer > 1.0) {
-                    context.points.gradePer = 1.0;
-                }
-
-                // Use the final grade for experience
-                if (finalGrade.weightedDenominator !== null) {
-                    context.points.possible = finalGrade.weightedDenominator;
-                    context.points.earned = finalGrade.weightedNumerator;
-                } else if (finalGrade.pointsDenominator !== null) {
-                    context.points.possible = finalGrade.pointsDenominator;
-                    context.points.earned = finalGrade.pointsNumerator;
-                }
-
-                //call them all
-                addHealth(context);
-                addExp(context);
-                addRankAndFinish(context);
-            } else {
-                document.querySelector('#gamificationMain').innerHTML = "<h1>Error in loading the widget. Please let your professor know!</h1>";
             }
+
+            // The percentage represents the health
+            if (context.points.attempted !== 0) {
+                context.points.gradePer = context.points.earned / context.points.attempted;
+            }
+
+            // Health should not be over 100%
+            if (context.points.gradePer > 1.0) {
+                context.points.gradePer = 1.0;
+            }
+
+            // Use the final grade for experience
+            if (finalGrade.weightedDenominator !== null) {
+                context.points.possible = finalGrade.weightedDenominator;
+                context.points.earned = finalGrade.weightedNumerator;
+            } else if (finalGrade.pointsDenominator !== null) {
+                context.points.possible = finalGrade.pointsDenominator;
+                context.points.earned = finalGrade.pointsNumerator;
+            }
+
+            //call them all
+            addHealth(context);
+            addExp(context);
+            addRankAndFinish(context);
         });
     } else {
         // TODO: This needs to exist and do something! See the issue on GitHub
