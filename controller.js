@@ -1,8 +1,7 @@
 /*jslint plusplus: true, browser: true, devel: true */
-/*global constant, Handlebars, valence, runNoValence, getCSV*/
+/*global constant, Handlebars, valence, getCSV*/
 
 (function () {
-    var useValence = true;
 
     /**
      * MAKE_WIDTH:
@@ -155,7 +154,7 @@
     }
 
     /******* THIS IS WHERE IT STARTS! *********/
-    if (useValence) {
+
         valence.run(function (err, data) {
             var grades,
                 finalGrade;
@@ -223,8 +222,5 @@
             addExp(context);
             addRankAndFinish(context);
         });
-    } else {
-        // TODO: This needs to exist and do something! See the issue on GitHub
-        runNoValence();
-    }
+
 }());
