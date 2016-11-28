@@ -29,7 +29,7 @@ var getCSV = (function () {
     return function (callBack) {
         var fileName;
 
-        fileName = "https://byui.brightspace.com" + jamGamifiction + "gamificationSpace/ranks";
+        fileName = "https://byui.brightspace.com" + gamificationPath + constant.PATH + "ranks";
         ajaxFile(fileName, function (error, fileText) {
             if (error) {
                 callBack(error, null);
