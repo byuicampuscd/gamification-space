@@ -179,8 +179,7 @@
                     attempted: 0,
                     gradePer: null
                 },
-                baseURL: jamGamifiction + "gamificationSpace/",
-                /** WARNING!!!! This NEEDS to change when you import to a new course!!!! **/
+                baseURL: gamificationPath + constant.PATH,
                 cssLoc: "uiInterface.css",
                 backgroundLoc: "Nebula Background.jpg"
             };

@@ -7,6 +7,7 @@ var constant = {
     HEALTH_RIGHT: 587,
     RANK_POINTS_LEFT: 717,
     MISSING_WIDTH: 0,
+    PATH: "gamificationSpace/" ,
     RANKS: [/*
         {name: "Citizen",                    file: "RankingIcons/1.png",  lowerBound:    0},
         {name: "Recruit",                    file: "RankingIcons/2.png",  lowerBound:   20},
