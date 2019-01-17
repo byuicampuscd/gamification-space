@@ -1,6 +1,11 @@
 # gamification-space
 
-## BEFORE adding to a course
+## Description 
+This tool allows users to add a gamification space tool to a Brightspace course.
+
+## How to Install
+
+### BEFORE adding to a course
 
 Line 170 of the controller.js refers to a Unique Course Identifier. This course identifier must be changed to reflect the identifier for the course you will be adding the tool to. To do this, navigate to "Manage Files" and copy the bolded directory at top (content > enforced > IDENTIFIER).  
 
@@ -10,7 +15,7 @@ becomes
 
 > baseURL: "/content/enforced/9001-your-course-identifier/gamificationSpace/"
 
-## Adding the tool to a Brightspace Course
+### Adding the tool to a Brightspace Course
 
 1. First, add the contents of this project to the course in a folder named "gamificationSpace"
 2. Add a custom widget to the desired course's homepage using the "Manage Homepage" button at the bottom right of a course
@@ -45,5 +50,3 @@ becomes
 ~~~
 
 On your freshly copied Homepage, select an option that allows you to have a full-width top panel (such as "Large Left Panel") and add your newly created widget to it.
-
-
